@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPulse | Developer Productivity & Focus Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-bolt-lightning pulse-icon"></i>
+        <span>Dev<strong>Pulse</strong></span>
+      </div>
+      <div class="nav-status">
+        <span class="live-indicator"><span class="blinking-dot"></span> Focus Mode</span>
+        <span id="currentDateStr" class="date-badge"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-wrap">
+    <!-- Top Quote Banner -->
+    <div class="quote-banner">
+      <div class="quote-text">
+        <i class="fa-solid fa-quote-left"></i>
+        <span id="quoteDisplay">"First, solve the problem. Then, write the code."</span>
+      </div>
+      <button id="newQuoteBtn" class="refresh-quote-btn" title="Get new inspiration">
+        <i class="fa-solid fa-arrows-rotate"></i> New Quote
+      </button>
+    </div>
+
+    <!-- Core Grid -->
+    <div class="tools-grid">
+      
+      <!-- TOOL 1: POMODORO TIMER -->
+      <section class="tool-card timer-card">
+        <div class="card-header">
+          <div class="title-wrap">
+            <i class="fa-regular fa-clock"></i>
+            <h2>Focus Timer</h2>
+          </div>
+          <div class="mode-switches">
+            <button class="mode-btn active" data-time="1500">Pomodoro</button>
+            <button class="mode-btn" data-time="300">Short Break</button>
+            <button class="mode-btn" data-time="900">Long Break</button>
+          </div>
+        </div>
+
+        <div class="timer-display-wrap">
+          <div class="timer-circle">
+            <h1 id="timerDisplay">25:00</h1>
+            <p id="timerStateLabel">Ready to code</p>
+          </div>
+        </div>
+
+        <div class="timer-controls">
+          <button id="startTimerBtn" class="ctrl-btn btn-play"><i class="fa-solid fa-play"></i> Start</button>
+          <button id="pauseTimerBtn" class="ctrl-btn btn-pause" disabled><i class="fa-solid fa-pause"></i> Pause</button>
+          <button id="resetTimerBtn" class="ctrl-btn btn-reset"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+        </div>
+      </section>
+
+      <!-- TOOL 2: QUICK SCRATCHPAD NOTES -->
+      <section class="tool-card notes-card">
+        <div class="card-header">
+          <div class="title-wrap">
+            <i class="fa-solid fa-code"></i>
+            <h2>Developer Scratchpad</h2>
+          </div>
+          <div class="scratch-actions">
+            <button id="copyNotesBtn" class="sm-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="clearNotesBtn" class="sm-btn danger"><i class="fa-regular fa-trash-can"></i> Clear</button>
+          </div>
+        </div>
+
+        <textarea id="notesArea" placeholder="// Paste JSON, write pseudocode, or jot debug logs... (auto-saved locally)"></textarea>
+
+        <div class="notes-footer">
+          <span id="charCount">0 characters · 0 words</span>
+          <span id="saveNotice" class="save-status"><i class="fa-solid fa-cloud-arrow-up"></i> Auto-saved</span>
+        </div>
+      </section>
+
+      <!-- TOOL 3: TASK SPRINT BOARD -->
+      <section class="tool-card tasks-card">
+        <div class="card-header">
+          <div class="title-wrap">
+            <i class="fa-solid fa-list-check"></i>
+            <h2>Sprint Tasks</h2>
+          </div>
+          <span id="taskCounter" class="task-badge">0 / 0 Done</span>
+        </div>
+
+        <form id="taskForm" class="task-input-bar">
+          <input type="text" id="taskInput" placeholder="Add a dev task (e.g. Build API endpoint)..." required />
+          <select id="taskTag">
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Bug">Bug</option>
+            <option value="Review">Review</option>
+          </select>
+          <button type="submit" class="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+        </form>
+
+        <div class="task-list-wrapper">
+          <ul id="taskList" class="task-list">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>DevPulse Productivity Suite · Designed & Coded by Syed Ibrahim · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

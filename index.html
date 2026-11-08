@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Syed Ibrahim — aspiring Frontend Developer portfolio." />
+  <title>Syed Ibrahim | Frontend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Syed Ibrahim home">
+        <img src="images/Profile.jpg" alt="Syed Ibrahim" />
+        <span>Syed<span class="accent">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="nav-cta" href="#contact">
+        Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            AVAILABLE FOR FULL-TIME OPPORTUNITIES
+          </p>
+
+          <h1>
+            Building digital<br />
+            experiences with <span class="gradient-text">purpose.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Syed Ibrahim</strong> — an aspiring Frontend
+            Developer who enjoys turning ideas and designs into responsive,
+            interactive websites.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+              View resume <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/areugonemad-dot"
+              target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:fairozsyed027@gmail.com" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+
+            <span class="social-note">Connect with me</span>
+          </div>
+        </div>
+
+        <!-- PROFILE CARD -->
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="profile-card">
+            <div class="card-window">
+              <span></span>
+              <span></span>
+              <span></span>
+              <small>PROFILE_CARD.exe</small>
+            </div>
+
+            <div class="profile-photo-wrap">
+              <img class="profile-photo"
+                src="images/Profile.jpg"
+                alt="Portrait of Syed Ibrahim" />
+            </div>
+
+            <h2>Syed Ibrahim</h2>
+            <p class="profile-role">Frontend Developer</p>
+
+            <div class="profile-divider"></div>
+
+            <div class="profile-details">
+              <p><i class="fa-solid fa-location-dot"></i> India</p>
+              <p><i class="fa-solid fa-graduation-cap"></i> BCA Graduate</p>
+              <p><i class="fa-solid fa-laptop-code"></i> Web Development</p>
+            </div>
+          </div>
+
+          <div class="floating-skill skill-html">
+            <i class="fa-brands fa-html5"></i> HTML5
+          </div>
+
+          <div class="floating-skill skill-css">
+            <i class="fa-brands fa-css3-alt"></i> CSS3
+          </div>
+
+          <div class="floating-skill skill-js">
+            <i class="fa-brands fa-js"></i> JavaScript
+          </div>
+
+          <div class="floating-skill skill-react">
+            <i class="fa-brands fa-react"></i> React
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span></span> Scroll to explore
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section content-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>A little about <span class="gradient-text">my journey.</span></h2>
+          <p>Curious by nature. Focused on building useful things for the web.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-panel glass-panel reveal">
+            <h3>From learning to building</h3>
+
+            <p>
+              I am a 2025 BCA graduate from Al-Ameen Institute of Information
+              Sciences. I am developing my skills in frontend technologies and
+              enjoy creating clean, accessible, and responsive user interfaces.
+            </p>
+
+            <p>
+              I like learning by building projects, understanding how things
+              work, and improving my code through testing and iteration.
+            </p>
+
+            <a class="text-link" href="#contact">
+              Let's connect <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card glass-panel">
+              <i class="fa-solid fa-code"></i>
+              <strong>Frontend</strong>
+              <span>Development focus</span>
+            </div>
+
+            <div class="stat-card glass-panel">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <strong>2025</strong>
+              <span>BCA graduate</span>
+            </div>
+
+            <div class="stat-card glass-panel">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <strong>Always learning</strong>
+              <span>Building and improving</span>
+            </div>
+
+            <div class="stat-card glass-panel">
+              <i class="fa-solid fa-earth-asia"></i>
+              <strong>India</strong>
+              <span>Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section content-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / MY TOOLKIT</p>
+          <h2>Skills I use to bring ideas <span class="gradient-text">to life.</span></h2>
+          <p>Technologies and tools I am learning and working with.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+            <h3>HTML5</h3>
+            <p>Semantic page structure</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+            <h3>CSS3</h3>
+            <p>Responsive layouts and styling</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-js skill-icon js-icon"></i>
+            <h3>JavaScript ES6</h3>
+            <p>Interactive web experiences</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-react skill-icon react-icon"></i>
+            <h3>React</h3>
+            <p>Component-based interfaces</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-github skill-icon"></i>
+            <h3>GitHub</h3>
+            <p>Version control and projects</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-python skill-icon python-icon"></i>
+            <h3>Python</h3>
+            <p>Programming fundamentals</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-solid fa-server skill-icon"></i>
+            <h3>Django</h3>
+            <p>Backend framework basics</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-brands fa-java skill-icon java-icon"></i>
+            <h3>Java</h3>
+            <p>Object-oriented programming</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-solid fa-database skill-icon"></i>
+            <h3>SQL</h3>
+            <p>Working with databases</p>
+          </article>
+
+          <article class="skill-card glass-panel reveal">
+            <i class="fa-solid fa-wand-magic-sparkles skill-icon vibe-icon"></i>
+            <h3>Vibe Coding <span class="new-tag">NEW</span></h3>
+            <p>AI-assisted development and iteration</p>
+          </article>
+        </div>
+
+        <p class="skills-note reveal">
+          I keep strengthening these skills through hands-on practice and projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section content-section" id="projects">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / SELECTED WORK</p>
+          <h2>Projects I've <span class="gradient-text">built.</span></h2>
+          <p>
+            A collection of website concepts and practical projects
+            showcasing my frontend development skills.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: GLOW BEAUTY STUDIO -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-art">
+              <img 
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" 
+                alt="Glow Beauty Studio Preview" 
+                class="project-thumb"
+                loading="lazy"
+              />
+              <div class="art-overlay salon-art">
+                <i class="fa-solid fa-spa"></i>
+                <span>GLOW / BEAUTY</span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>FRONTEND WEBSITE</span>
+                <span class="coming-tag">Live Demo</span>
+              </div>
+
+              <h3>Glow Beauty Studio</h3>
+
+              <p>
+                A premium beauty salon website featuring interactive
+                service filters, image gallery, testimonials, FAQ
+                accordion and appointment request form.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/glow-beauty-studio/index.html"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: RESTAURANT -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-art">
+              <img 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" 
+                alt="The Table Restaurant Preview" 
+                class="project-thumb"
+                loading="lazy"
+              />
+              <div class="art-overlay restaurant-art">
+                <i class="fa-solid fa-utensils"></i>
+                <span>THE / TABLE</span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>RESTAURANT APP</span>
+                <span class="coming-tag">Live Demo</span>
+              </div>
+
+              <h3>The Table Restaurant</h3>
+
+              <p>
+                An artisan dining website featuring real-time menu category
+                filtering, course highlights, seasonal cards, and an interactive
+                table reservation booking engine.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript ES6</span>
+                <span>DOM Manipulation</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/the-table-restaurant/index.html"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: DEVPULSE SUITE -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-art">
+              <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" 
+                alt="DevPulse Suite Preview" 
+                class="project-thumb"
+                loading="lazy"
+              />
+              <div class="art-overlay dashboard-art">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span>DEV / SUITE</span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>PRODUCTIVITY APP</span>
+                <span class="coming-tag">Live Demo</span>
+              </div>
+
+              <h3>DevPulse Productivity Suite</h3>
+
+              <p>
+                An interactive developer utility suite with a Pomodoro focus timer
+                (Web Audio alerts), auto-saving scratchpad note storage, and a dynamic
+                sprint task board.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript ES6</span>
+                <span>Web Audio API</span>
+                <span>LocalStorage</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/devpulse-productivity-suite/index.html"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section content-section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / EDUCATION</p>
+          <h2>My learning <span class="gradient-text">foundation.</span></h2>
+        </div>
+
+        <div class="education-card glass-panel reveal">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div>
+            <span class="education-year">2025</span>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Al-Ameen Institute of Information Sciences</p>
+            <span class="education-caption">Graduate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section content-section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel glass-panel reveal">
+          <div class="section-heading">
+            <p class="eyebrow">05 / GET IN TOUCH</p>
+            <h2>Have an opportunity or idea?<br />
+              <span class="gradient-text">Let's talk.</span>
+            </h2>
+            <p>
+              I am interested in full-time opportunities and meaningful
+              projects where I can learn, contribute, and grow.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:fairozsyed027@gmail.com" class="contact-link">
+              <span class="contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </span>
+              <span>
+                <small>EMAIL ME</small>
+                <strong>fairozsyed027@gmail.com</strong>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/areugonemad-dot"
+              target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              <span>
+                <small>GITHUB</small>
+                <strong>github.com/areugonemad-dot</strong>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+          </div>
+
+          <p class="linkedin-note">
+            LinkedIn profile link can be added here when available.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="#home">
+        <img src="images/Profile.jpg" alt="Syed Ibrahim" />
+        <span>Syed<span class="accent">.</span></span>
+      </a>
+
+      <p>
+        Designed and built by Syed Ibrahim ·
+        <span id="currentYear"></span>
+      </p>
+
+      <a class="back-top" href="#home" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
